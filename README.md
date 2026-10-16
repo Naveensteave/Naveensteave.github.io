@@ -10,7 +10,7 @@ naveen-portfolio/
 └── README.md       this file
 ```
 
-The site loads two libraries (GSAP, Lenis) and its fonts from public CDNs, so it needs an internet connection to look right.
+The site loads three libraries (GSAP, Lenis, Three.js) and its fonts from public CDNs, so it needs an internet connection to look right.
 
 ## Preview it on your computer
 
@@ -46,7 +46,7 @@ Both Netlify and GitHub Pages support your own domain (for example `naveen.desig
 
 ## After you deploy
 
-- **Link previews (WhatsApp, LinkedIn):** already set to `https://naveensteave.github.io/assets/naveen.webp`. If you move to another address, update `og:image`, `og:url` and `canonical` in `index.html`.
+- **Link previews (WhatsApp, LinkedIn):** in `index.html`, change `<meta property="og:image" content="assets/naveen.webp">` to the full address, for example `https://naveen-annadurai.netlify.app/assets/naveen.webp`. Previews need an absolute URL.
 - **Resume:** to update it, replace `assets/naveen-annadurai-resume.pdf` with a new file of the same name.
 - **Photo:** replace `assets/naveen.webp` (portrait, roughly 600 × 640).
 
@@ -54,11 +54,12 @@ Both Netlify and GitHub Pages support your own domain (for example `naveen.desig
 
 | To change | Search for |
 |---|---|
-| Hero (Hi, I'm Naveen) and headline | `class="hello"`, `class="lede"` |
-| Project cards | `class="work"` |
+| Hero headline | `intro-h` |
+| Metrics strip | `class="metrics"` |
+| Project cards | `class="cards"` |
 | Case studies | `CASE: DEEPAGENT`, `CASE: LAB`, `CASE: HEALTHPLUS`, `CASE: APPOINTMENT` |
-| Fragments, Experience, Skills, Contact | `id="fragments"`, `id="experience"`, `id="skills"`, `id="contact"` |
-| Resume page | `id="resume"` |
+| About, Resume, Contact tabs | `===== ABOUT`, `===== RESUME`, `===== CONTACT` |
 | Social links | `instagram.com`, `x.com`, `wa.me`, `linkedin.com` |
+| Text on the 3D pass | `function drawFront` and `function drawBack` |
 | Colours | the `:root{` block at the top of the `<style>` |
 | Type scale and spacing | `--fs-` and `--s-` tokens in `:root` |
