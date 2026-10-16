@@ -460,13 +460,6 @@ dialog.lb::backdrop{background:rgba(6,7,9,.86);backdrop-filter:blur(6px)}
           <svg viewBox="0 0 24 24"><path d="M4 2.5 20 12l-7.2 1.6L9.3 21z" fill="#0D99FF" stroke="#fff" stroke-width="1.4" stroke-linejoin="round"/></svg>
           <b>Naveen</b>
         </div>
-        <div class="metrics" aria-label="Shipped impact at GoZen Technologies">
-          <div class="metric"><strong>12→22%</strong><span>Landing conversion after the flow redesign</span></div>
-          <div class="metric"><strong>−37.5%</strong><span>Average signup time</span></div>
-          <div class="metric"><strong>+30%</strong><span>Signups, HyperReach.AI landing page</span></div>
-          <div class="metric"><strong>+40%</strong><span>Engagement from four features in 5 months</span></div>
-          <div class="metric"><strong>100+</strong><span>Demo requests in 30 days from the product video</span></div>
-        </div>
       </div>
 
       <div class="list-head"><p class="eyebrow">Selected work · 2023 – now</p><p class="eyebrow">4 projects</p></div>
@@ -1408,7 +1401,6 @@ dialog.lb::backdrop{background:rgba(6,7,9,.86);backdrop-filter:blur(6px)}
     gsap.set(selbox, { clipPath: 'inset(0 100% 100% 0)' });
     gsap.timeline({ defaults: { ease: 'power2.inOut' }, onComplete: () => { introDone = true; } })
       .from('.intro-h', { y: 24, opacity: 0, duration: .9, ease: 'expo.out' }, 0.2)
-      .from('.metrics .metric', { y: 18, opacity: 0, duration: .7, stagger: .06, ease: 'power3.out' }, 0.5)
       .to(cursor, { opacity: 1, duration: .3 }, 0.7)
       .to(cursor, { x: x0, y: y0, duration: .9 }, 0.7)
       .to(cursor, { x: x1, y: y1, duration: .9 }, 1.65)
