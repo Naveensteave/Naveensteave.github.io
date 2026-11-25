@@ -10,7 +10,7 @@ naveen-portfolio/
 └── README.md       this file
 ```
 
-The site loads three libraries (GSAP, Lenis, Three.js) and its fonts from public CDNs, so it needs an internet connection to look right.
+The site loads two libraries (GSAP, Lenis) and its fonts from public CDNs, so it needs an internet connection to look right.
 
 ## Preview it on your computer
 
@@ -54,12 +54,16 @@ Both Netlify and GitHub Pages support your own domain (for example `naveen.desig
 
 | To change | Search for |
 |---|---|
-| Hero headline | `intro-h` |
-| Metrics strip | `class="metrics"` |
-| Project cards | `class="cards"` |
+| Hero headline and intro | `id="hero-h"`, `class="intro"` |
+| Availability line | `class="avail"` |
+| Featured project cards | `class="work-grid"` |
+| Extra projects behind "Explore more work" | `id="moreWork"` |
+| Scrolling strip of screens | `id="stripTrack"` |
+| "Specializing in" line and products | `id="special-h"`, `class="products"` |
+| Resume rows | `id="experience"` |
+| About, Design, Systems & AI | `id="about"` |
+| Footer contact and socials | `id="contact"` |
 | Case studies | `CASE: DEEPAGENT`, `CASE: LAB`, `CASE: HEALTHPLUS`, `CASE: APPOINTMENT` |
-| About, Resume, Contact tabs | `===== ABOUT`, `===== RESUME`, `===== CONTACT` |
-| Social links | `instagram.com`, `x.com`, `wa.me`, `linkedin.com` |
-| Text on the 3D pass | `function drawFront` and `function drawBack` |
+| Full resume page | `id="resume"` |
 | Colours | the `:root{` block at the top of the `<style>` |
 | Type scale and spacing | `--fs-` and `--s-` tokens in `:root` |
