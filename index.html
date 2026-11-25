@@ -76,7 +76,7 @@ p{margin:0}
   background:var(--badge);padding:4px;box-shadow:0 8px 24px -8px rgba(47,107,255,.6);text-decoration:none;transition:transform .4s var(--ease)}
 .badge img{width:100%;height:100%;border-radius:50%;object-fit:cover;object-position:50% 22%}
 .badge:hover{transform:rotate(-8deg) scale(1.04)}
-.nav{position:fixed;z-index:50;left:calc(max(var(--s-3),env(safe-area-inset-left,0px)) + 40px);top:calc(var(--s-3) + env(safe-area-inset-top,0px));display:flex;align-items:center;gap:var(--s-half);
+.nav{position:fixed;z-index:50;left:calc(max(var(--s-3),env(safe-area-inset-left,0px)) + 72px + var(--s-2));top:calc(var(--s-3) + 14px + env(safe-area-inset-top,0px));display:flex;align-items:center;gap:var(--s-half);
   padding:var(--s-half);border-radius:999px;background:color-mix(in srgb,var(--canvas) 72%,transparent);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}
 .nav a,.nav button{display:inline-flex;align-items:center;justify-content:center;min-height:36px;padding:0 var(--s-2);border-radius:999px;border:0;background:var(--chip);color:var(--sel-ink);
   font:500 var(--fs--1)/1 var(--body);text-decoration:none;cursor:pointer;transition:background .2s,color .2s}
@@ -91,7 +91,7 @@ p{margin:0}
 .paused .nav .pause{display:none}
 .paused .nav .play{display:block}
 .nav-spacer{height:calc(var(--s-15) + env(safe-area-inset-top,0px))}
-@media (max-width:600px){.badge{width:56px;height:56px}.nav{left:calc(max(var(--s-2),env(safe-area-inset-left,0px)) + 32px);top:calc(var(--s-2) + env(safe-area-inset-top,0px))}.badge{left:max(var(--s-2),env(safe-area-inset-left,0px));top:calc(var(--s-2) + env(safe-area-inset-top,0px))}
+@media (max-width:600px){.badge{width:48px;height:48px;padding:3px}.nav{left:calc(max(var(--s-2),env(safe-area-inset-left,0px)) + 48px + var(--s-1));top:calc(var(--s-2) + 2px + env(safe-area-inset-top,0px))}.nav a[data-nav="home"]{display:none}.badge{left:max(var(--s-2),env(safe-area-inset-left,0px));top:calc(var(--s-2) + env(safe-area-inset-top,0px))}
   .nav a{padding:0 var(--s-1)}.nav-spacer{height:calc(var(--s-12) + env(safe-area-inset-top,0px))}}
 .to-top{position:fixed;z-index:40;right:max(var(--s-3),env(safe-area-inset-right,0px));bottom:calc(var(--s-3) + env(safe-area-inset-bottom,0px));width:40px;height:40px;border-radius:50%;
   border:0;background:var(--chip);color:var(--sel-ink);display:grid;place-items:center;cursor:pointer;opacity:0;pointer-events:none;transition:opacity .3s}
