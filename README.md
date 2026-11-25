@@ -46,7 +46,7 @@ Both Netlify and GitHub Pages support your own domain (for example `naveen.desig
 
 ## After you deploy
 
-- **Link previews (WhatsApp, LinkedIn):** in `index.html`, change `<meta property="og:image" content="assets/naveen.webp">` to the full address, for example `https://naveen-annadurai.netlify.app/assets/naveen.webp`. Previews need an absolute URL.
+- **Link previews (WhatsApp, LinkedIn):** already set to `https://naveensteave.github.io/assets/naveen.webp`. If you move to another address, update `og:image`, `og:url` and `canonical` in `index.html`.
 - **Resume:** to update it, replace `assets/naveen-annadurai-resume.pdf` with a new file of the same name.
 - **Photo:** replace `assets/naveen.webp` (portrait, roughly 600 × 640).
 
